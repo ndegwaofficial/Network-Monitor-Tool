@@ -28,7 +28,6 @@ Clone this repository to your local machine using the following command:
 
 sh
 
-Copy code
 
 `git clone https://github.com/yourusername/network-monitor-tool.git
 cd network-monitor-tool`
@@ -39,7 +38,7 @@ Install the required Python libraries using pip:
 
 sh
 
-Copy code
+
 
 `pip install scapy psutil`
 
@@ -52,7 +51,7 @@ Usage
 
 sh
 
-Copy code
+
 
 `python network_monitor.py`
 
@@ -80,9 +79,9 @@ Here's the main part of the `network_monitor.py` script:
 
 python
 
-Copy code
 
-`import scapy.all as scapy
+```
+import scapy.all as scapy
 import psutil
 import socket
 import threading
@@ -116,7 +115,8 @@ class NetworkMonitor:
 if __name__ == "__main__":
     monitor = NetworkMonitor()
     monitor.discover_devices()
-    monitor.start_monitoring()`
+    monitor.start_monitoring()
+```
 
 Customization
 -------------
